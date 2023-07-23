@@ -1,6 +1,7 @@
 # cmd-ln-ex
 Example on how to use SPF13 to run command line application:
 
+```
 ├── LICENSE
 ├── README.md
 ├── cmd
@@ -11,6 +12,7 @@ Example on how to use SPF13 to run command line application:
 ├── subpackb
 │   └── example2.go
 └── toppack.go
+```
 
 We have one module called cmd-ln-ex. It contains to sub packages subpacka and subpackb.  All dependancies are mangaged by 
 cmd-ln-ex/mod.go.
