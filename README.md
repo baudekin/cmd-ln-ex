@@ -26,11 +26,11 @@ We have one module called cmd-ln-ex. It contains to sub packages subpacka and su
 cmd-ln-ex/mod.go.
 
 To setup spf13 cobra:
-1. Install Cobra Helper: ```shell go install github.com/spf13/cobra-cli@latest```
+1. Install Cobra Helper: ```go install github.com/spf13/cobra-cli@latest```
 2. Switch to Application directory: ```cd app```
-3. Add serve command: ```shell cobra-cli add serve```
-4. Add version command: ```shell cobra-cli add version```
-5. Add configCmd command: ```shell cobra-cli add -p 'configCmd```
+3. Add serve command: ```cobra-cli add serve```
+4. Add version command: ```cobra-cli add version```
+5. Add configCmd command: ```cobra-cli add -p 'configCmd```
 
 
 ```go
