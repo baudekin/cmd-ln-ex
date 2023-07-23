@@ -1,7 +1,9 @@
 # cmd-ln-ex
 Example on how to use SPF13 to run command line application:
 
-`├── LICENSE
+
+```
+├── LICENSE
 ├── README.md
 ├── app
 │   └── main.go
@@ -15,6 +17,12 @@ Example on how to use SPF13 to run command line application:
 
 We have one module called cmd-ln-ex. It contains to sub packages subpacka and subpackb.  All dependancies are mangaged by 
 cmd-ln-ex/mod.go.
+
+To setup spf13 cobra:
+# Install Cobra Helper: ```shell go install github.com/spf13/cobra-cli@latest```
+# Switch to Application directory: ```cd app```
+# Initialize command line: ```shell cobra-cli init```
+
 
 ```go
 package main

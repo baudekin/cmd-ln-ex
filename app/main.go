@@ -1,13 +1,11 @@
+/*
+Copyright © 2023 NAME HERE <EMAIL ADDRESS>
+
+*/
 package main
 
-import (
-	top "github.com/baudekin/cmd-ln-ex"
-	suba "github.com/baudekin/cmd-ln-ex/subpacka"
-	subb "github.com/baudekin/cmd-ln-ex/subpackb"
-)
+import "github.com/baudekin/cmd-ln-ex/app/cmd"
 
 func main() {
-	top.HelloTop()
-	suba.Hello()
-	subb.Hello()
+	cmd.Execute()
 }
