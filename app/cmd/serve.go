@@ -1,27 +1,30 @@
 /*
 Copyright © 2023 NAME HERE <EMAIL ADDRESS>
-
 */
 package cmd
 
 import (
 	"fmt"
 
+	top "github.com/baudekin/cmd-ln-ex"
+	suba "github.com/baudekin/cmd-ln-ex/subpacka"
+	subb "github.com/baudekin/cmd-ln-ex/subpackb"
 	"github.com/spf13/cobra"
 )
 
 // serveCmd represents the serve command
 var serveCmd = &cobra.Command{
 	Use:   "serve",
-	Short: "A brief description of your command",
-	Long: `A longer description that spans multiple lines and likely contains examples
+	Short: "Start Service",
+	Long: `"start" service aka run hello commands.
 and usage of using your command. For example:
 
-Cobra is a CLI library for Go that empowers applications.
-This application is a tool to generate the needed files
-to quickly create a Cobra application.`,
+go run main.go service`,
 	Run: func(cmd *cobra.Command, args []string) {
 		fmt.Println("serve called")
+		top.HelloTop()
+		suba.Hello()
+		subb.Hello()
 	},
 }
 
@@ -32,7 +35,7 @@ func init() {
 
 	// Cobra supports Persistent Flags which will work for this command
 	// and all subcommands, e.g.:
-	// serveCmd.PersistentFlags().String("foo", "", "A help for foo")
+	serveCmd.PersistentFlags().String("port", "-p", "Service Port")
 
 	// Cobra supports local flags which will only run when this command
 	// is called directly, e.g.:
