@@ -35,9 +35,10 @@ cmd-ln-ex/mod.go.
 ## To setup spf13 cobra:
 1. Install Cobra Helper: ```go install github.com/spf13/cobra-cli@latest```
 2. Switch to Application directory: ```cd app```
-3. Add serve command: ```cobra-cli add serve```
-4. Add version command: ```cobra-cli add version```
-5. Add the logic you want to run to go run main.go go routine. See serve.go below 
+3. Create root.go: ```cobra-cli init```
+4. Add serve command: ```cobra-cli add serve```
+5. Add version command: ```cobra-cli add version```
+6. Add the logic you want to run to go run main.go go routine. See serve.go below 
 
 
 ## main.go 
